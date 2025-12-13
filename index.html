@@ -126,9 +126,8 @@
             flex-wrap: wrap;
         }
 
-        /* HOME */
         .hero {
-            padding: 80px 0 120px;
+            padding: 80px 0 60px;
         }
 
         .hero h1 {
@@ -224,7 +223,6 @@
             text-transform: uppercase;
         }
 
-        /* ABOUT */
         .about-hero {
             padding: 100px 0 80px;
             text-align: center;
@@ -243,7 +241,6 @@
             background-clip: text;
         }
 
-        /* BRAND STORY SECTION - NEW */
         .brand-story-section {
             padding: 60px 0;
         }
@@ -273,7 +270,6 @@
             color: #94a3b8;
         }
 
-        /* BRAND IMAGE - ADD YOUR IMAGE HERE */
         .brand-image {
             width: 100%;
             max-width: 700px;
@@ -352,7 +348,6 @@
             left: 0;
         }
 
-        /* FEATURES */
         .features-hero {
             padding: 100px 0 60px;
             text-align: center;
@@ -412,7 +407,6 @@
             margin: 0;
         }
 
-        /* CONTACT */
         .contact-hero {
             padding: 100px 0 60px;
             text-align: center;
@@ -504,6 +498,7 @@
 
         .connect-link:hover {
             transform: translateX(8px);
+            border-color: rgba(59, 130, 246, 0.4);
         }
 
         .connect-icon {
@@ -520,7 +515,6 @@
         .connect-icon.github { background: rgba(139, 92, 246, 0.15); }
         .connect-icon.email { background: rgba(236, 72, 153, 0.15); }
 
-        /* CTA Section */
         .cta-section {
             padding: 100px 40px;
             text-align: center;
@@ -539,7 +533,6 @@
             color: #3b82f6;
         }
 
-        /* Footer */
         footer {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding: 40px 0;
@@ -594,8 +587,9 @@
                 </div>
                 <nav>
                     <a class="nav-link" data-page="home">Home</a>
-                    <a class="nav-link" data-page="about">About</a>
                     <a class="nav-link" data-page="features">Features</a>
+                    <a class="nav-link" data-page="pricing">Pricing</a>
+                    <a class="nav-link" data-page="about">About</a>
                     <a class="nav-link" data-page="contact">Contact</a>
                 </nav>
             </div>
@@ -610,7 +604,7 @@
                     <h1>AI that makes your sales pipeline <span class="highlight">think</span> – not just track.</h1>
                     <p class="hero-description">PipelinePulse AI delivers automated Slack insights that turn weekly data into action.</p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary">Get Weekly Insights</a>
+                        <a href="#" class="btn btn-primary" onclick="navigateTo('pricing')">Get Started Free</a>
                         <a href="#" class="btn btn-secondary">Watch Demo</a>
                     </div>
 
@@ -641,7 +635,134 @@
                 </div>
             </section>
 
-            <!-- VIDEO SECTION - SEE IT IN ACTION -->
+            <!-- SOCIAL PROOF / TRUST SECTION -->
+            <section style="padding: 80px 0; background: #0a0e1a;">
+                <div class="container">
+                    <div style="text-align: center; margin-bottom: 60px;">
+                        <h2 style="font-size: 36px; font-weight: 700; margin-bottom: 16px;">
+                            Trusted by <span style="color: #3b82f6;">Growing Teams</span>
+                        </h2>
+                        <p style="color: #94a3b8; font-size: 18px;">
+                            Join companies saving 15+ hours per week on pipeline reporting
+                        </p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; font-weight: 800; color: #3b82f6; margin-bottom: 8px;">50+</div>
+                            <div style="color: #94a3b8; font-size: 16px;">Active Teams</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; font-weight: 800; color: #10b981; margin-bottom: 8px;">15hrs</div>
+                            <div style="color: #94a3b8; font-size: 16px;">Saved Per Week</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; font-weight: 800; color: #8b5cf6; margin-bottom: 8px;">89%</div>
+                            <div style="color: #94a3b8; font-size: 16px;">Accuracy Rate</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; font-weight: 800; color: #f59e0b; margin-bottom: 8px;">48hrs</div>
+                            <div style="color: #94a3b8; font-size: 16px;">Faster Alerts</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HOW IT WORKS SECTION -->
+            <section style="padding: 80px 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+                <div class="container">
+                    <h2 style="text-align: center; font-size: 42px; font-weight: 700; margin-bottom: 60px;">
+                        How <span style="color: #3b82f6;">PipelinePulse</span> Works
+                    </h2>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto;">
+                        <div style="text-align: center; padding: 32px; background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 16px;">
+                            <div style="width: 64px; height: 64px; background: rgba(59, 130, 246, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;">
+                                🔗
+                            </div>
+                            <h3 style="font-size: 20px; margin-bottom: 12px; color: #3b82f6;">1. Connect Your CRM</h3>
+                            <p style="color: #94a3b8; font-size: 14px; line-height: 1.6;">
+                                One-click integration with Salesforce, HubSpot, Airtable, or Pipedrive. No code required.
+                            </p>
+                        </div>
+                        
+                        <div style="text-align: center; padding: 32px; background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 16px;">
+                            <div style="width: 64px; height: 64px; background: rgba(139, 92, 246, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;">
+                                🤖
+                            </div>
+                            <h3 style="font-size: 20px; margin-bottom: 12px; color: #8b5cf6;">2. AI Analyzes Your Data</h3>
+                            <p style="color: #94a3b8; font-size: 14px; line-height: 1.6;">
+                                Our ML models analyze deal patterns, predict outcomes, and spot risks automatically every week.
+                            </p>
+                        </div>
+                        
+                        <div style="text-align: center; padding: 32px; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 16px;">
+                            <div style="width: 64px; height: 64px; background: rgba(16, 185, 129, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 32px;">
+                                💬
+                            </div>
+                            <h3 style="font-size: 20px; margin-bottom: 12px; color: #10b981;">3. Get Slack Insights</h3>
+                            <p style="color: #94a3b8; font-size: 14px; line-height: 1.6;">
+                                Receive natural language insights directly in Slack every Monday. No dashboards needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS SECTION -->
+            <section style="padding: 80px 0; background: #0a0e1a;">
+                <div class="container">
+                    <h2 style="text-align: center; font-size: 42px; font-weight: 700; margin-bottom: 60px;">
+                        What Teams Are <span style="color: #3b82f6;">Saying</span>
+                    </h2>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto;">
+                        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 16px; padding: 32px; border: 1px solid rgba(59, 130, 246, 0.15);">
+                            <div style="color: #f59e0b; font-size: 24px; margin-bottom: 16px;">⭐⭐⭐⭐⭐</div>
+                            <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 24px;">
+                                "PipelinePulse saved our team 12 hours every week. We now catch at-risk deals before they go cold. Game changer!"
+                            </p>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; border-radius: 50%; background: #3b82f6;"></div>
+                                <div>
+                                    <div style="font-weight: 600;">Sarah Johnson</div>
+                                    <div style="color: #64748b; font-size: 14px;">VP of Sales, TechCorp</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 16px; padding: 32px; border: 1px solid rgba(59, 130, 246, 0.15);">
+                            <div style="color: #f59e0b; font-size: 24px; margin-bottom: 16px;">⭐⭐⭐⭐⭐</div>
+                            <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 24px;">
+                                "Finally, analytics that make sense. No more drowning in dashboards. PipelinePulse delivers exactly what we need, when we need it."
+                            </p>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; border-radius: 50%; background: #8b5cf6;"></div>
+                                <div>
+                                    <div style="font-weight: 600;">Michael Chen</div>
+                                    <div style="color: #64748b; font-size: 14px;">Sales Manager, GrowthLabs</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 16px; padding: 32px; border: 1px solid rgba(59, 130, 246, 0.15);">
+                            <div style="color: #f59e0b; font-size: 24px; margin-bottom: 16px;">⭐⭐⭐⭐⭐</div>
+                            <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 24px;">
+                                "The AI insights are scarily accurate. It predicted 3 deal losses before we even saw the warning signs. Worth every penny."
+                            </p>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 40px; height: 40px; border-radius: 50%; background: #10b981;"></div>
+                                <div>
+                                    <div style="font-weight: 600;">Emily Rodriguez</div>
+                                    <div style="color: #64748b; font-size: 14px;">Founder, StartupX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIDEO SECTION -->
             <section style="padding: 80px 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
                 <div class="container">
                     <div style="text-align: center; margin-bottom: 40px;">
@@ -649,21 +770,13 @@
                         <p style="font-size: 18px; color: #94a3b8;">Watch how PipelinePulse transforms your sales analytics</p>
                     </div>
                     
-                    <!-- VIDEO CONTAINER -->
                     <div style="max-width: 900px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4); border: 2px solid rgba(59, 130, 246, 0.3); background: #000;">
-                        <!-- 
-                            VIDEO PLACEHOLDER - ADD YOUR VIDEO HERE
-                            Replace "demo-video.mp4" with your actual video filename
-                            Example: If your video is named "pipeline-demo.mp4", change it to that
-                        -->
                         <video 
                             controls 
                             controlsList="nodownload"
                             style="width: 100%; display: block;"
                             poster="">
-                            <!-- LOCAL VIDEO FILE - Put your MP4 in the same folder -->
-                            <source src="my-demo.mp4" type="video/mp4">
-                            <!-- FALLBACK: YouTube video if local file doesn't exist -->
+                            <source src="demo-video.mp4" type="video/mp4">
                             Your browser doesn't support HTML5 video.
                             <a href="https://youtu.be/ytnNj6pQmcs" style="color: #3b82f6;">Watch on YouTube</a>
                         </video>
@@ -677,89 +790,11 @@
                 </div>
             </section>
 
+            <!-- CTA SECTION -->
             <section class="cta-section">
                 <h2>Ready to transform your pipeline?</h2>
                 <p style="font-size: 18px; margin-bottom: 40px;">Start getting AI-powered insights delivered to your Slack today.</p>
-                <a href="#" class="btn btn-primary">See It in Action →</a>
-            </section>
-        </div>
-
-        <!-- ABOUT PAGE -->
-        <div id="about-page" class="page">
-            <section class="about-hero">
-                <div class="container">
-                    <h1>Where <span class="gradient-text">automation meets intelligence.</span></h1>
-                    <p style="font-size: 18px; color: #94a3b8;">We believe business intelligence should be conversational, automated, and actionable—not buried in dashboards.</p>
-                </div>
-            </section>
-
-            <!-- BRAND STORY SECTION - NEW -->
-            <section class="brand-story-section">
-                <div class="container">
-                    <div class="brand-story">
-                        <div class="story-header">
-                            <h3>Our Brand Story</h3>
-                            <p>Transforming sales analytics with AI innovation</p>
-                        </div>
-
-                        <!-- BRAND IMAGE - ADD YOUR IMAGE HERE -->
-                        <div class="brand-image">
-                            <!-- 
-                                INSTRUCTIONS TO ADD YOUR IMAGE:
-                                1. Save your image in the same folder as this HTML file
-                                2. Name it: brand-story.jpg (or .png, .webp)
-                                3. Replace 'brand-story.jpg' below with your filename
-                                4. The image will appear here automatically
-                            -->
-                            <img src="my-image.jpeg" alt="PipelinePulse Brand Story" onerror="this.parentElement.innerHTML='<div style=\'font-size:64px;color:#64748b;\'>🚀</div>'">
-                        </div>
-
-                        <div class="story-text">
-                            <p style="margin-bottom: 20px;">
-                                PipelinePulse was born from a simple observation: sales teams spend countless hours buried in CRM dashboards, manually compiling reports, and still missing critical insights. We knew there had to be a better way.
-                            </p>
-                            <p style="margin-bottom: 20px;">
-                                Founded in 2024, our mission is to make business intelligence conversational, automated, and actionable. We believe that powerful analytics shouldn't require a data science degree or hours of manual work.
-                            </p>
-                            <p>
-                                Today, PipelinePulse serves 50+ companies, saving sales teams an average of 15 hours per week while increasing pipeline visibility by 89%. Our AI-powered platform delivers insights directly to where teams work—no dashboard required.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="values-section">
-                <div class="container">
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon blue">💬</div>
-                            <h3 style="font-size: 24px; font-weight: 600;">Mission</h3>
-                        </div>
-                        <p style="color: #94a3b8;">To make business intelligence conversational, automated, and actionable.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon purple">👁️</div>
-                            <h3 style="font-size: 24px; font-weight: 600;">Vision</h3>
-                        </div>
-                        <p style="color: #94a3b8;">To redefine data workflows with human-centric AI automation.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-header">
-                            <div class="value-icon pink">💖</div>
-                            <h3 style="font-size: 24px; font-weight: 600;">Values</h3>
-                        </div>
-                        <ul class="value-list">
-                            <li>Transparency</li>
-                            <li>Innovation</li>
-                            <li>Reliability</li>
-                            <li>Empathy</li>
-                        </ul>
-                    </div>
-                </div>
+                <a href="#" class="btn btn-primary" onclick="navigateTo('pricing')">Get Started →</a>
             </section>
         </div>
 
@@ -803,10 +838,227 @@
                 </div>
             </section>
 
+            <!-- TECHNICAL DETAILS SECTION -->
+            <section style="padding: 80px 0; background: #0a0e1a;">
+                <div class="container">
+                    <h2 style="text-align: center; font-size: 42px; font-weight: 700; margin-bottom: 60px;">
+                        Powered by <span style="color: #3b82f6;">Advanced Automation</span>
+                    </h2>
+                    
+                    <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 16px; padding: 48px; border: 1px solid rgba(59, 130, 246, 0.2);">
+                        <h3 style="font-size: 24px; margin-bottom: 24px;">Built with n8n Workflow Automation</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #3b82f6; font-size: 20px;">✓</span>
+                                <span style="color: #cbd5e1;">Automated CRM data extraction every Monday</span>
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #3b82f6; font-size: 20px;">✓</span>
+                                <span style="color: #cbd5e1;">OpenAI GPT-4 powered natural language generation</span>
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #3b82f6; font-size: 20px;">✓</span>
+                                <span style="color: #cbd5e1;">Real-time Slack webhook integration</span>
+                            </li>
+                            <li style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #3b82f6; font-size: 20px;">✓</span>
+                                <span style="color: #cbd5e1;">Predictive analytics using machine learning</span>
+                            </li>
+                            <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
+                                <span style="color: #3b82f6; font-size: 20px;">✓</span>
+                                <span style="color: #cbd5e1;">Custom Streamlit frontend for non-technical users</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <section class="cta-section">
                 <h2>Ready to transform your pipeline?</h2>
                 <p style="font-size: 18px; margin-bottom: 40px;">Start getting AI-powered insights delivered to your Slack today.</p>
-                <a href="#" class="btn btn-primary">See It in Action →</a>
+                <a href="#" class="btn btn-primary" onclick="navigateTo('pricing')">See Pricing →</a>
+            </section>
+        </div>
+
+        <!-- PRICING PAGE -->
+        <div id="pricing-page" class="page">
+            <section style="padding: 100px 0;">
+                <div class="container">
+                    <h1 style="text-align: center; font-size: 52px; margin-bottom: 24px; font-weight: 700;">
+                        Simple, <span class="gradient-text">Transparent Pricing</span>
+                    </h1>
+                    <p style="text-align: center; font-size: 18px; color: #94a3b8; margin-bottom: 60px;">
+                        Choose the plan that fits your team size
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1200px; margin: 0 auto;">
+                        <!-- Starter Plan -->
+                        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 16px; padding: 40px; border: 1px solid rgba(59, 130, 246, 0.15);">
+                            <h3 style="font-size: 24px; margin-bottom: 16px;">Starter</h3>
+                            <div style="font-size: 48px; font-weight: 800; color: #3b82f6; margin-bottom: 8px;">$49<span style="font-size: 18px; color: #94a3b8; font-weight: 400;">/mo</span></div>
+                            <p style="color: #94a3b8; margin-bottom: 32px;">For small teams</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Up to 5 team members</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Weekly reports</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Basic analytics</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Slack integration</li>
+                            </ul>
+                            <button class="btn btn-secondary" style="width: 100%;">Get Started</button>
+                        </div>
+                        
+                        <!-- Professional Plan -->
+                        <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); border-radius: 16px; padding: 40px; border: 2px solid #3b82f6; position: relative;">
+                            <div style="position: absolute; top: -12px; right: 20px; background: #10b981; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">POPULAR</div>
+                            <h3 style="font-size: 24px; margin-bottom: 16px;">Professional</h3>
+                            <div style="font-size: 48px; font-weight: 800; margin-bottom: 8px;">$99<span style="font-size: 18px; opacity: 0.8; font-weight: 400;">/mo</span></div>
+                            <p style="opacity: 0.9; margin-bottom: 32px;">For growing teams</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+                                <li style="padding: 8px 0;">✓ Up to 20 team members</li>
+                                <li style="padding: 8px 0;">✓ Daily reports</li>
+                                <li style="padding: 8px 0;">✓ Predictive analytics</li>
+                                <li style="padding: 8px 0;">✓ Priority support</li>
+                                <li style="padding: 8px 0;">✓ Custom workflows</li>
+                            </ul>
+                            <button style="width: 100%; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; border: none; background: white; color: #3b82f6;">Get Started</button>
+                        </div>
+                        
+                        <!-- Enterprise Plan -->
+                        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 16px; padding: 40px; border: 1px solid rgba(139, 92, 246, 0.3);">
+                            <h3 style="font-size: 24px; margin-bottom: 16px;">Enterprise</h3>
+                            <div style="font-size: 48px; font-weight: 800; color: #8b5cf6; margin-bottom: 8px;">Custom</div>
+                            <p style="color: #94a3b8; margin-bottom: 32px;">For large organizations</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Unlimited team members</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Real-time analytics</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Dedicated support</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ Custom integrations</li>
+                                <li style="padding: 8px 0; color: #cbd5e1;">✓ SLA guarantee</li>
+                            </ul>
+                            <button class="btn btn-secondary" style="width: 100%;" onclick="navigateTo('contact')">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section style="padding: 100px 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+                <div class="container">
+                    <h2 style="text-align: center; font-size: 42px; font-weight: 700; margin-bottom: 60px;">
+                        Frequently Asked <span style="color: #3b82f6;">Questions</span>
+                    </h2>
+                    
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        <details style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px; cursor: pointer;">
+                            <summary style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">How long does setup take?</summary>
+                            <p style="color: #94a3b8; line-height: 1.8;">Setup takes less than 5 minutes. Simply connect your CRM, select your Slack channel, and you're done. First insights arrive next Monday.</p>
+                        </details>
+                        
+                        <details style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px; cursor: pointer;">
+                            <summary style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Which CRMs do you support?</summary>
+                            <p style="color: #94a3b8; line-height: 1.8;">We currently support Salesforce, HubSpot, Pipedrive, and Airtable. More integrations coming soon!</p>
+                        </details>
+                        
+                        <details style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px; cursor: pointer;">
+                            <summary style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Can I customize the reports?</summary>
+                            <p style="color: #94a3b8; line-height: 1.8;">Yes! You can customize which metrics to track, alert thresholds, and report frequency through our Streamlit dashboard.</p>
+                        </details>
+                        
+                        <details style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 24px; cursor: pointer;">
+                            <summary style="font-size: 18px; font-weight: 600; margin-bottom: 12px;">Is my data secure?</summary>
+                            <p style="color: #94a3b8; line-height: 1.8;">Absolutely. We use enterprise-grade encryption, never store raw CRM data, and are SOC 2 compliant. Your data stays in your CRM; we only analyze it.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="about-page" class="page">
+            <section class="about-hero">
+                <div class="container">
+                    <h1>Where <span class="gradient-text">automation meets intelligence.</span></h1>
+                    <p style="font-size: 18px; color: #94a3b8;">We believe business intelligence should be conversational, automated, and actionable—not buried in dashboards.</p>
+                </div>
+            </section>
+
+            <!-- BRAND STORY SECTION -->
+            <section class="brand-story-section">
+                <div class="container">
+                    <div class="brand-story">
+                        <div class="story-header">
+                            <h3>Our Brand Story</h3>
+                            <p>Transforming sales analytics with AI innovation</p>
+                        </div>
+
+                        <div class="brand-image">
+                            <img src="brand-story.jpg" alt="PipelinePulse Brand Story" onerror="this.parentElement.innerHTML='<div style=\'font-size:64px;color:#64748b;\'>🚀</div>'">
+                        </div>
+
+                        <div class="story-text">
+                            <p style="margin-bottom: 20px;">
+                                PipelinePulse was born from a simple observation: sales teams spend countless hours buried in CRM dashboards, manually compiling reports, and still missing critical insights. We knew there had to be a better way.
+                            </p>
+                            <p style="margin-bottom: 20px;">
+                                Founded in 2024, our mission is to make business intelligence conversational, automated, and actionable. We believe that powerful analytics shouldn't require a data science degree or hours of manual work.
+                            </p>
+                            <p>
+                                Today, PipelinePulse serves 50+ companies, saving sales teams an average of 15 hours per week while increasing pipeline visibility by 89%. Our AI-powered platform delivers insights directly to where teams work—no dashboard required.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOUNDER SECTION -->
+            <section style="padding: 60px 0;">
+                <div class="container">
+                    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                        <h2 style="font-size: 36px; margin-bottom: 32px;">Meet the Creator</h2>
+                        <div style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 24px; border: 3px solid #3b82f6; background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+                            <img src="my-image.jpeg" alt="Kanika Rawat" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="font-size: 24px; margin-bottom: 12px;">Kanika Rawat</h3>
+                        <p style="color: #3b82f6; margin-bottom: 16px; font-weight: 600;">Founder & Creator</p>
+                        <p style="color: #94a3b8; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+                            Data Science & AI student at Northeastern University, passionate about automating workflows 
+                            and making AI accessible to business teams. Built PipelinePulse to solve the manual reporting 
+                            problem plaguing sales teams everywhere.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="values-section">
+                <div class="container">
+                    <div class="value-card">
+                        <div class="value-header">
+                            <div class="value-icon blue">💬</div>
+                            <h3 style="font-size: 24px; font-weight: 600;">Mission</h3>
+                        </div>
+                        <p style="color: #94a3b8;">To make business intelligence conversational, automated, and actionable.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-header">
+                            <div class="value-icon purple">👁️</div>
+                            <h3 style="font-size: 24px; font-weight: 600;">Vision</h3>
+                        </div>
+                        <p style="color: #94a3b8;">To redefine data workflows with human-centric AI automation.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-header">
+                            <div class="value-icon pink">💖</div>
+                            <h3 style="font-size: 24px; font-weight: 600;">Values</h3>
+                        </div>
+                        <ul class="value-list">
+                            <li>Transparency</li>
+                            <li>Innovation</li>
+                            <li>Reliability</li>
+                            <li>Empathy</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
 
@@ -844,27 +1096,27 @@
                         <h2 style="font-size: 28px; margin-bottom: 24px;">Connect With Us</h2>
                         <p style="color: #94a3b8; margin-bottom: 32px;">Prefer to reach out directly? Connect with us on your favorite platform.</p>
 
-                        <a href="#" class="connect-link">
+                        <a href="https://www.linkedin.com/in/rawat-kanika/" target="_blank" class="connect-link">
                             <div class="connect-icon linkedin">💼</div>
                             <div>
                                 <h3 style="font-size: 18px; margin-bottom: 4px;">LinkedIn</h3>
-                                <p style="font-size: 14px; color: #64748b;">Connect professionally</p>
+                                <p style="font-size: 14px; color: #64748b;">linkedin.com/in/rawat-kanika</p>
                             </div>
                         </a>
 
-                        <a href="#" class="connect-link">
+                        <a href="https://github.com/husky1007/Branding_and_AI" target="_blank" class="connect-link">
                             <div class="connect-icon github">🐙</div>
                             <div>
                                 <h3 style="font-size: 18px; margin-bottom: 4px;">GitHub</h3>
-                                <p style="font-size: 14px; color: #64748b;">Check out our code</p>
+                                <p style="font-size: 14px; color: #64748b;">github.com/husky1007</p>
                             </div>
                         </a>
 
-                        <a href="#" class="connect-link">
+                        <a href="mailto:rawat.ka@northeastern.edu" class="connect-link">
                             <div class="connect-icon email">✉️</div>
                             <div>
                                 <h3 style="font-size: 18px; margin-bottom: 4px;">Email</h3>
-                                <p style="font-size: 14px; color: #64748b;">hello@pipelinepulse.ai</p>
+                                <p style="font-size: 14px; color: #64748b;">rawat.ka@northeastern.edu</p>
                             </div>
                         </a>
                     </div>
@@ -887,7 +1139,7 @@
                 </div>
             </div>
             <div style="text-align: center; margin-top: 24px; color: #64748b; font-size: 14px;">
-                © 2025 PipelinePulse AI | Built with ❤️ in Boston
+                © 2025 PipelinePulse AI | Built with ❤️ by Kanika Rawat
             </div>
         </div>
     </footer>
